@@ -51,8 +51,8 @@ class TanmayRaghav:
 
 <img src="https://img.shields.io/badge/Python-Exploring-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
 <img src="https://img.shields.io/badge/Java-Learning-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
-<img src="https://img.shields.io/badge/Data%20Science-In%20Progress-7F00FF?style=flat-square&logo= pandas&logoColor=white" alt="Data Science" />
-<img src="https://img.shields.io/badge/AI%20%26%20ML-Exploring-FF00A8?style=flat-square&logo=brain&logoColor=white" alt="AI and ML" />
+<img src="https://img.shields.io/badge/Data%20Science-In%20Progress-7F00FF?style=flat-square&logo=pandas&logoColor=white" alt="Data Science" />
+<img src="https://img.shields.io/badge/AI%20%26%20ML-Exploring-FF00A8?style=flat-square&logo=github&logoColor=white" alt="AI and ML" />
 
 </div>
 
