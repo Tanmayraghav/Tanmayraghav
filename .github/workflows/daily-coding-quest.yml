@@ -1,0 +1,99 @@
+name: Daily Coding Quest
+
+on:
+  schedule:
+    # 18:47 India Standard Time (13:17 UTC), away from the top of the hour.
+    - cron: "17 13 * * *"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  publish-daily-quest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create a fresh coding task
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const parts = new Intl.DateTimeFormat("en-CA", {
+              timeZone: "Asia/Kolkata",
+              year: "numeric",
+              month: "2-digit",
+              day: "2-digit"
+            }).formatToParts(new Date());
+            const dateParts = Object.fromEntries(parts.filter(p => p.type !== "literal").map(p => [p.type, p.value]));
+            const today = `${dateParts.year}-${dateParts.month}-${dateParts.day}`;
+            const title = `Daily Coding Quest — ${today}`;
+
+            const tasks = [
+              ["Even or odd", "Write a Java program that checks whether an integer is even or odd. Test zero and a negative number too."],
+              ["Sum from 1 to n", "Read n and calculate 1 + 2 + ... + n. Handle n = 0 clearly and explain your loop."],
+              ["Multiplication table", "Print the multiplication table for a number from 1 through 10. Keep the output aligned and readable."],
+              ["Factorial with a loop", "Calculate n! using a loop. Explain why factorial grows quickly and decide how to handle invalid input."],
+              ["Count digits", "Count the digits in an integer using a loop. Make sure zero and negative input are handled."],
+              ["Sum of digits", "Given an integer, calculate the sum of its digits. Test 0, 1234, and a negative value."],
+              ["Reverse a number", "Reverse the digits of an integer without converting it to a String. Test trailing zeros such as 1200."],
+              ["Palindrome number", "Check whether an integer reads the same backwards. Do not treat negative numbers as palindromes."],
+              ["Prime check", "Write an efficient beginner-friendly prime checker that only tests divisors up to the square root of n."],
+              ["Fibonacci sequence", "Print the first n Fibonacci numbers using iteration, and test n = 1 and n = 2."],
+              ["Armstrong number", "Check whether a number is an Armstrong number. Start with 153 and 123; explain your digit-power logic."],
+              ["Maximum of three", "Read three integers and print the largest. Test ties and negative values."],
+              ["Leap year", "Check leap years using the divisible-by-400 / divisible-by-100 / divisible-by-4 rule."],
+              ["Reverse a string", "Reverse a string without using a built-in reverse helper. Test spaces and a one-character string."],
+              ["String palindrome", "Check a string palindrome. Decide and document whether your solution ignores spaces and letter case."],
+              ["Count vowels", "Count vowels in a string using a loop. Handle uppercase and lowercase letters."],
+              ["Array sum and average", "Read an integer array, calculate the sum and average, and handle an empty array safely."],
+              ["Linear search", "Search for a target value in an array and return its index, or -1 when absent."],
+              ["Count even and odd", "Given an integer array, count even and odd elements. Test an array containing zero."],
+              ["Second-largest element", "Find the second-largest distinct value in an array. Decide what happens if no such value exists."],
+              ["Bubble sort", "Implement bubble sort from scratch. Show the array before and after sorting."],
+              ["Binary search", "Implement binary search on a sorted array. Test present, absent, and edge-position targets."],
+              ["Character frequency", "Count character frequencies in a string using a HashMap. Explain the map's key and value."],
+              ["Remove duplicates", "Remove duplicate values from an array while keeping the first occurrence order."],
+              ["Two Sum", "Given an integer array and target, return two indices whose values add to the target. State the time complexity."],
+              ["Star triangle", "Print a left-aligned star triangle of height n, then explain the loop nesting."],
+              ["Menu calculator", "Build a calculator using switch, supporting +, -, *, and /. Handle division by zero."],
+              ["Methods practice", "Refactor one earlier solution into small methods: input, processing, and output."],
+              ["Debug and improve", "Choose one previous solution, test at least three edge cases, fix a bug or improve clarity, and explain the change."],
+              ["Weekly review", "Review the week's solutions. Improve one README with problem statement, approach, sample I/O, and complexity."]
+            ];
+
+            const dayNumber = Math.floor(Date.UTC(Number(dateParts.year), Number(dateParts.month) - 1, Number(dateParts.day)) / 86400000);
+            const [taskName, taskDescription] = tasks[dayNumber % tasks.length];
+
+            const existing = await github.rest.issues.listForRepo({
+              owner, repo, state: "all", per_page: 100, sort: "created", direction: "desc"
+            });
+            if (existing.data.some(issue => !issue.pull_request && issue.title === title)) {
+              core.info(`Quest already exists for ${today}; skipping duplicate.`);
+              return;
+            }
+
+            const body = [
+              `## 🎯 Today's task: ${taskName}`,
+              "",
+              taskDescription,
+              "",
+              "### ✅ Definition of done",
+              "- [ ] Solve it yourself in Java (look up syntax if needed, but understand the solution).",
+              "- [ ] Run at least 3 tests, including an edge case.",
+              "- [ ] Commit the solution to your coding-practice repository, such as **LEETCODE**, using a meaningful commit message.",
+              "- [ ] Add a short note explaining the approach and time/space complexity where relevant.",
+              "- [ ] Comment here with your commit link, then close this issue.",
+              "",
+              "> This automation creates a daily reminder, not a fake commit. The contribution comes from the work you actually complete."
+            ].join("\n");
+
+            const created = await github.rest.issues.create({
+              owner, repo, title, body,
+              labels: ["daily-quest"]
+            }).catch(async error => {
+              if (error.status === 404) {
+                return await github.rest.issues.create({ owner, repo, title, body });
+              }
+              throw error;
+            });
+            core.info(`Created daily quest: ${created.data.html_url}`);
