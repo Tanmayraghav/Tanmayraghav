@@ -1,40 +1,40 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Tanmayraghav/Tanmayraghav/main/assets/terminal-header.svg" alt="Animated terminal header: tanmay@github, whoami, tanmay raghav" width="100%" />
+<img src="https://raw.githubusercontent.com/Tanmayraghav/Tanmayraghav/main/assets/terminal-header.svg" width="100%" alt="Arch Linux-inspired animated terminal banner for Tanmay Raghav" />
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&duration=2600&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Learning+by+building.;Exploring+AI+%26+Data+Science.;One+project+and+one+commit+at+a+time." alt="Animated developer tagline" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=2800&pause=1100&color=1793D1&center=true&vCenter=true&width=620&lines=Learning+by+building.;Linux+%2F+AI+%2F+Data+Science.;One+commit+at+a+time." alt="Animated terminal-style tagline" />
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=Tanmayraghav&style=flat-square&color=58A6FF&label=PROFILE+VIEWS" alt="Profile views" />
-<img src="https://img.shields.io/github/followers/Tanmayraghav?style=flat-square&color=35c46a&label=FOLLOWERS&logo=github" alt="GitHub followers" />
+<img src="https://komarev.com/ghpvc/?username=Tanmayraghav&style=flat-square&color=1793D1&label=PROFILE+VIEWS" alt="Profile views" />
+<img src="https://img.shields.io/github/followers/Tanmayraghav?style=flat-square&color=3fb950&label=FOLLOWERS&logo=github" alt="GitHub followers" />
 
 </div>
 
 ---
 
-### `$ cat about.txt`
+### `$ whoami`
 
-I'm a **B.Tech Computer Science student at GLA University**, learning software development by building projects and solving problems.
+B.Tech Computer Science student at **GLA University**. I like learning how things work, building projects, and making my code better one iteration at a time.
 
-- **Interests:** AI, machine learning, data science, and web development
-- **Learning:** Python, Java + DSA, and developer tools
-- **Approach:** Build small things, understand how they work, and improve them
+- **Interests:** Linux, open source, AI, machine learning, and data science
+- **Learning:** Python, Java + DSA, and web development
+- **Current approach:** learn the concept → write the code → test edge cases → document it
 
 ### `$ ls ./toolbox`
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,java,html,css,js,git,github,vscode,windows&theme=dark&perline=6" alt="Python, Java, HTML, CSS, JavaScript, Git, GitHub, VS Code and Windows" width="100%" />
+<img src="https://skillicons.dev/icons?i=python,java,html,css,js,git,github,vscode,windows&theme=dark&perline=6" alt="Python, Java, HTML, CSS, JavaScript, Git, GitHub, VS Code and Windows icons" />
 
 </div>
 
 ### `$ ls ./projects`
 
 **01 · Brain Tumour Detection**  
-Project work focused on brain tumour detection.  
+Exploring a project focused on brain tumour detection.  
 [Open repository ↗](https://github.com/Tanmayraghav/BRAIN-TUMOUR-DETECTION)
 
 **02 · Data Science**  
@@ -49,23 +49,15 @@ Frontend practice and web development experiments.
 
 ---
 
-### `$ ./daily-coding-quest`
-
-A GitHub Actions workflow now creates a fresh Java / DSA practice issue every day at approximately **6:47 PM IST**. Solve the task, test edge cases, and commit the solution to your coding-practice repository.
-
-[**Open daily coding tasks ↗**](https://github.com/Tanmayraghav/Tanmayraghav/issues)
-
----
-
 ### `$ git status --short`
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Tanmayraghav&show_icons=true&rank_icon=github&hide_border=true&theme=github_dark&bg_color=0b0f14&title_color=58a6ff&icon_color=35c46a&text_color=c9d1d9" alt="GitHub stats" width="100%" />
+<img src="https://github-readme-stats.vercel.app/api?username=Tanmayraghav&show_icons=true&rank_icon=github&hide_border=true&theme=github_dark&bg_color=0b1017&title_color=1793d1&icon_color=3fb950&text_color=c9d1d9" alt="GitHub stats" width="100%" />
 
-<br/>
+<br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Tanmayraghav&bg_color=0b0f14&color=c9d1d9&line=58a6ff&point=35c46a&area=true&hide_border=true&custom_title=Contribution%20Activity" alt="GitHub contribution activity graph" width="100%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Tanmayraghav&bg_color=0b1017&color=a6b7ca&line=1793d1&point=3fb950&area=true&hide_border=true&custom_title=Contribution%20Activity" alt="GitHub contribution graph" width="100%" />
 
 </div>
 
@@ -76,7 +68,7 @@ A GitHub Actions workflow now creates a fresh Java / DSA practice issue every da
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Tanmayraghav/Tanmayraghav/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Tanmayraghav/Tanmayraghav/output/github-contribution-grid-snake.svg" />
-  <img src="https://raw.githubusercontent.com/Tanmayraghav/Tanmayraghav/output/github-contribution-grid-snake.svg" alt="Animated GitHub contribution snake" width="100%" />
+  <img src="https://raw.githubusercontent.com/Tanmayraghav/Tanmayraghav/output/github-contribution-grid-snake.svg" alt="Animated contribution snake" width="100%" />
 </picture>
 
 </div>
@@ -88,7 +80,7 @@ A GitHub Actions workflow now creates a fresh Java / DSA practice issue every da
 `exit 0` · Thanks for stopping by.
 
 <a href="https://github.com/Tanmayraghav?tab=repositories">
-  <img src="https://img.shields.io/badge/Explore-My%20Repositories-58A6FF?style=flat-square&logo=github&logoColor=white" alt="Explore repositories" />
+  <img src="https://img.shields.io/badge/Explore-My%20Repositories-1793D1?style=flat-square&logo=github&logoColor=white" alt="Explore repositories" />
 </a>
 
 </div>
