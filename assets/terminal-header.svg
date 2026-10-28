@@ -1,25 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-labelledby="title desc">
-  <title id="title">Tanmay Raghav — developer terminal</title>
-  <desc id="desc">A clean terminal-style banner with an animated online light and blinking cursor.</desc>
-  <rect x="1" y="1" width="1198" height="218" rx="13" fill="#0b0f14" stroke="#343d49" stroke-width="2"/>
-  <path d="M2 44 H1198" stroke="#252d38" stroke-width="1.5"/>
-  <circle cx="22" cy="22" r="6" fill="#ff5f57"/>
-  <circle cx="44" cy="22" r="6" fill="#febc2e"/>
-  <circle cx="66" cy="22" r="6" fill="#28c840"/>
-  <text x="600" y="27" text-anchor="middle" fill="#8793a2" font-family="JetBrains Mono, Fira Code, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="13">tanmay@github</text>
-  <circle cx="1103" cy="22" r="4.5" fill="#35c46a">
-    <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">Tanmay Raghav — Arch-inspired Linux terminal</title>
+  <desc id="desc">A polished dark terminal banner inspired by Arch Linux and Hyprland, with JetBrains Mono style typography, a blinking cursor and subtle animated status light.</desc>
+  <defs>
+    <linearGradient id="archblue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#1793d1"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101821"/>
+      <stop offset="1" stop-color="#0b1017"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="1198" height="258" rx="15" fill="url(#panel)" stroke="#334155" stroke-width="2"/>
+  <path d="M2 46 H1198" stroke="#263444" stroke-width="1.5"/>
+  <circle cx="23" cy="23" r="6" fill="#ff5f57"/>
+  <circle cx="45" cy="23" r="6" fill="#febc2e"/>
+  <circle cx="67" cy="23" r="6" fill="#28c840"/>
+  <text x="600" y="28" text-anchor="middle" fill="#8796a8" font-family="'JetBrains Mono','Cascadia Code','Fira Code',ui-monospace,Consolas,monospace" font-size="13">arch-inspired / terminal</text>
+  <circle cx="1091" cy="23" r="4.5" fill="#3fb950">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2.2s" repeatCount="indefinite"/>
   </circle>
-  <text x="1117" y="27" fill="#a4aebb" font-family="JetBrains Mono, Fira Code, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="13">online</text>
-  <text x="28" y="83" font-family="JetBrains Mono, Fira Code, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="17">
-    <tspan fill="#35c46a">tanmay@github</tspan><tspan fill="#8994a3"> ~ $ </tspan><tspan fill="#e6edf3">whoami</tspan>
+  <text x="1105" y="28" fill="#a5b4c5" font-family="'JetBrains Mono','Cascadia Code','Fira Code',ui-monospace,Consolas,monospace" font-size="12">READY</text>
+
+  <text x="28" y="83" font-family="'JetBrains Mono','Cascadia Code','Fira Code',ui-monospace,Consolas,monospace" font-size="16">
+    <tspan fill="#3fb950">tanmay@linux</tspan><tspan fill="#64748b"> ~ </tspan><tspan fill="#1793d1">$</tspan><tspan fill="#dbe7f3"> fastfetch</tspan>
   </text>
-  <text x="28" y="130" fill="#58a6ff" font-family="JetBrains Mono, Fira Code, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="32" font-weight="700" letter-spacing="-0.5">tanmay raghav</text>
-  <rect x="276" y="105" width="9" height="28" rx="1" fill="#58a6ff">
+
+  <text x="28" y="137" fill="#e6edf3" font-family="'JetBrains Mono','Cascadia Code','Fira Code',ui-monospace,Consolas,monospace" font-size="34" font-weight="700" letter-spacing="-1">tanmay raghav</text>
+  <rect x="289" y="111" width="10" height="30" rx="1.5" fill="#1793d1">
     <animate attributeName="opacity" values="1;0;1" dur="1.05s" repeatCount="indefinite"/>
   </rect>
-  <text x="28" y="165" fill="#a0aaba" font-family="JetBrains Mono, Fira Code, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="16">ai / data science / software / automation</text>
-  <text x="28" y="195" fill="#667384" font-family="JetBrains Mono, Fira Code, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="12">B.Tech CSE · GLA University</text>
-  <path d="M1050 192 h120" stroke="#1f2937" stroke-width="1"/>
-  <text x="1171" y="208" text-anchor="end" fill="#4b5563" font-family="JetBrains Mono, Fira Code, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="10">v1.2</text>
+  <text x="28" y="174" fill="#9fb0c3" font-family="'JetBrains Mono','Cascadia Code','Fira Code',ui-monospace,Consolas,monospace" font-size="16">B.Tech CSE  /  AI  /  DATA SCIENCE</text>
+  <text x="28" y="207" fill="#64748b" font-family="'JetBrains Mono','Cascadia Code','Fira Code',ui-monospace,Consolas,monospace" font-size="13">linux • open source • automation • building things</text>
+  <path d="M28 226 H570" stroke="#253446" stroke-width="1"/>
+  <text x="28" y="245" fill="#516477" font-family="'JetBrains Mono','Cascadia Code','Fira Code',ui-monospace,Consolas,monospace" font-size="10">theme: arch linux + hyprland aesthetics</text>
+
+  <g transform="translate(1000 74)">
+    <path d="M72 0 L11 125 L34 125 L54 83 L71 117 L98 117 L78 72 L94 38 Z" fill="url(#archblue)"/>
+    <path d="M72 0 L94 38 L78 72 L71 58 L61 82 L54 83 Z" fill="#7dd3fc" opacity="0.72"/>
+    <path d="M71 58 L78 72 L71 87 L64 72 Z" fill="#0b1017" opacity="0.96"/>
+    <path d="M46 106 L54 83 L63 102 Z" fill="#0b1017" opacity="0.7"/>
+  </g>
+  <text x="1170" y="241" text-anchor="end" fill="#334155" font-family="'JetBrains Mono','Cascadia Code','Fira Code',ui-monospace,Consolas,monospace" font-size="11">01 / 01</text>
 </svg>
