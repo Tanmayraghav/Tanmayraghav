@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Tanmayraghav/Tanmayraghav/main/assets/terminal-header.svg" width="100%" alt="Arch Linux-inspired animated terminal banner for Tanmay Raghav" />
+<img src="https://raw.githubusercontent.com/Tanmayraghav/Tanmayraghav/main/assets/terminal-header.svg?v=arch-terminal-2" width="100%" alt="Arch Linux-inspired animated terminal banner for Tanmay Raghav" />
 
 <br/>
 
