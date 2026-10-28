@@ -1,14 +1,14 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Tanmayraghav/Tanmayraghav/main/assets/terminal-header.svg" alt="Animated terminal header: tanmay@github, whoami, TANMAY RAGHAV" width="100%" />
+<img src="https://raw.githubusercontent.com/Tanmayraghav/Tanmayraghav/main/assets/terminal-header.svg" alt="Animated terminal header: tanmay@github, whoami, tanmay raghav" width="100%" />
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&duration=2600&pause=1000&color=4EA1FF&center=true&vCenter=true&width=650&lines=Learning+by+building.;Exploring+AI+%26+Data+Science.;One+project+and+one+commit+at+a+time." alt="Animated developer tagline" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&duration=2600&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Learning+by+building.;Exploring+AI+%26+Data+Science.;One+project+and+one+commit+at+a+time." alt="Animated developer tagline" />
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=Tanmayraghav&style=flat-square&color=4EA1FF&label=PROFILE+VIEWS" alt="Profile views" />
+<img src="https://komarev.com/ghpvc/?username=Tanmayraghav&style=flat-square&color=58A6FF&label=PROFILE+VIEWS" alt="Profile views" />
 <img src="https://img.shields.io/github/followers/Tanmayraghav?style=flat-square&color=35c46a&label=FOLLOWERS&logo=github" alt="GitHub followers" />
 
 </div>
@@ -49,15 +49,23 @@ Frontend practice and web development experiments.
 
 ---
 
+### `$ ./daily-coding-quest`
+
+A GitHub Actions workflow now creates a fresh Java / DSA practice issue every day at approximately **6:47 PM IST**. Solve the task, test edge cases, and commit the solution to your coding-practice repository.
+
+[**Open daily coding tasks ↗**](https://github.com/Tanmayraghav/Tanmayraghav/issues)
+
+---
+
 ### `$ git status --short`
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Tanmayraghav&show_icons=true&rank_icon=github&hide_border=true&theme=github_dark&bg_color=0b0f14&title_color=4ea1ff&icon_color=35c46a&text_color=c9d1d9" alt="GitHub stats" width="100%" />
+<img src="https://github-readme-stats.vercel.app/api?username=Tanmayraghav&show_icons=true&rank_icon=github&hide_border=true&theme=github_dark&bg_color=0b0f14&title_color=58a6ff&icon_color=35c46a&text_color=c9d1d9" alt="GitHub stats" width="100%" />
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Tanmayraghav&bg_color=0b0f14&color=c9d1d9&line=4ea1ff&point=35c46a&area=true&hide_border=true&custom_title=Contribution%20Activity" alt="GitHub contribution activity graph" width="100%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Tanmayraghav&bg_color=0b0f14&color=c9d1d9&line=58a6ff&point=35c46a&area=true&hide_border=true&custom_title=Contribution%20Activity" alt="GitHub contribution activity graph" width="100%" />
 
 </div>
 
@@ -80,7 +88,7 @@ Frontend practice and web development experiments.
 `exit 0` · Thanks for stopping by.
 
 <a href="https://github.com/Tanmayraghav?tab=repositories">
-  <img src="https://img.shields.io/badge/Explore-My%20Repositories-4EA1FF?style=flat-square&logo=github&logoColor=white" alt="Explore repositories" />
+  <img src="https://img.shields.io/badge/Explore-My%20Repositories-58A6FF?style=flat-square&logo=github&logoColor=white" alt="Explore repositories" />
 </a>
 
 </div>
