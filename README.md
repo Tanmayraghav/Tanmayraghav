@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Tanmayraghav/Tanmayraghav/main/assets/terminal-header.svg" alt="Animated terminal header: tanmay@github, whoami, tanmay raghav" width="100%" />
+<img src="https://raw.githubusercontent.com/Tanmayraghav/Tanmayraghav/main/assets/terminal-header.svg" alt="Animated terminal header: tanmay@github, whoami, TANMAY RAGHAV" width="100%" />
 
 <br/>
 
