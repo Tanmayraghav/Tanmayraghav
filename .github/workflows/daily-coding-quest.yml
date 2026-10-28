@@ -88,12 +88,6 @@ jobs:
             ].join("\n");
 
             const created = await github.rest.issues.create({
-              owner, repo, title, body,
-              labels: ["daily-quest"]
-            }).catch(async error => {
-              if (error.status === 404) {
-                return await github.rest.issues.create({ owner, repo, title, body });
-              }
-              throw error;
+              owner, repo, title, body
             });
             core.info(`Created daily quest: ${created.data.html_url}`);
