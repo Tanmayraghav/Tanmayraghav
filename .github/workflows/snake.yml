@@ -11,6 +11,11 @@ on:
 permissions:
   contents: write
 
+# Avoid simultaneous runs racing to update the output branch.
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: true
+
 jobs:
   generate:
     runs-on: ubuntu-latest
