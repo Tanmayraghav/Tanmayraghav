@@ -61,8 +61,9 @@ jobs:
               ["Weekly review", "Review the week's solutions. Improve one README with problem statement, approach, sample I/O, and complexity."]
             ];
 
-            const dayNumber = Math.floor(Date.UTC(Number(dateParts.year), Number(dateParts.month) - 1, Number(dateParts.day)) / 86400000);
-            const [taskName, taskDescription] = tasks[dayNumber % tasks.length];
+            const dayNumber = Math.floor((Date.UTC(Number(dateParts.year), Number(dateParts.month) - 1, Number(dateParts.day)) - Date.UTC(2026, 9, 28)) / 86400000);
+            const taskIndex = ((dayNumber % tasks.length) + tasks.length) % tasks.length;
+            const [taskName, taskDescription] = tasks[taskIndex];
 
             const existing = await github.rest.issues.listForRepo({
               owner, repo, state: "all", per_page: 100, sort: "created", direction: "desc"
@@ -88,6 +89,6 @@ jobs:
             ].join("\n");
 
             const created = await github.rest.issues.create({
-              owner, repo, title, body
+              owner, repo, title, body, assignees: [owner]
             });
             core.info(`Created daily quest: ${created.data.html_url}`);
